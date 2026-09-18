@@ -7,7 +7,8 @@
       "Bash(python3 __TRACKED_VAR__/mermaid2text.py 00-אנטומיה-של-צעד.md __TRACKED_VAR__/anat.md)",
       "Bash(echo \"\")",
       "Bash(echo \"=== דוגמה: איך נראה תרשים אחרי ההמרה ===\")",
-      "Bash(python3 -)"
+      "Bash(python3 -)",
+      "Bash(git push:*)"
     ]
   }
 }

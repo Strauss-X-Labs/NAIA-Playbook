@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:gist.github.com)",
+      "Bash(cd \"/Users/lior/dev/INAI/Playbook V2/08-ארכיטקטורת-המימוש\")",
+      "Bash(python3 __TRACKED_VAR__/mermaid2text.py 00-מפת-הזרימה-המלאה.md __TRACKED_VAR__/flow.md)",
+      "Bash(python3 __TRACKED_VAR__/mermaid2text.py 00-אנטומיה-של-צעד.md __TRACKED_VAR__/anat.md)",
+      "Bash(echo \"\")",
+      "Bash(echo \"=== דוגמה: איך נראה תרשים אחרי ההמרה ===\")",
+      "Bash(python3 -)"
+    ]
+  }
+}

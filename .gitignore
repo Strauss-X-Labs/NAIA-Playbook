@@ -8,3 +8,6 @@ Playbook/
 # קבצי עבודה זמניים
 *.tmp
 ~$*
+
+# הגדרות אישיות של Claude Code — לא משותפות
+**/.claude/settings.local.json

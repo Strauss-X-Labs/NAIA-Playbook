@@ -1,6 +1,6 @@
 ---
 name: pf-horizon-scanning
-description: "עוקב אחר יכולות AI חדשות ובודק אם הן פותחות בעיות שהוקפאו בגלל חוסר בשלות טכנולוגית. Use for the monthly technology horizon sweep, or when a significant AI capability lands and frozen problems should be re-checked. Hebrew triggers: סריקת קו אופק, טכנולוגיה חדשה, ממתין לטכנולוגיה, בעיה קפואה, יכולת AI חדשה. Compares only against cards frozen for AI-maturity reasons — never a blanket re-scan."
+description: "עוקב אחר יכולות AI חדשות ובודק אם הן פותחות בעיות שהוחזרו מהגדרת המיזם כי השורש אינו פתיר ב-AI כיום. Use for the monthly technology horizon sweep, or when a significant AI capability lands and frozen problems should be re-checked. Hebrew triggers: סריקת קו אופק, טכנולוגיה חדשה, ממתין לטכנולוגיה, בעיה קפואה, יכולת AI חדשה. Compares only against cards tagged waiting-for-technology by md-return-to-factory — never a blanket re-scan."
 metadata:
   stage: 01-מפעל-הבעיות
   sub_process: E
@@ -24,10 +24,10 @@ metadata:
 
 1. סרוק מקורות טכנולוגיים מוגדרים (Stanford AI Index, OECD.AI — מקור #27 ב[רשימה המורחבת](../../../07-נספחים/רשימת-מקורות-מורחבת.md))
 2. זהה יכולת חדשה מהותית
-3. **השוואה ממוקדת בלבד:** מול שדה **"חסמים טכנולוגיים"** של כרטיסים המתויגים "ממתינה לטכנולוגיה X" — ותו לא
+3. **השוואה ממוקדת בלבד:** מול שדה **"חסמים טכנולוגיים"** של כרטיסים המתויגים "ממתינה לטכנולוגיה X" ([`md-return-to-factory`](../md-return-to-factory/SKILL.md) הוא המקור היחיד לתיוג) — ותו לא
 
 ```
-⛔ לא כל כרטיס מושהה נבדק — רק אלה שהוקפאו בגלל בשלות AI.
+⛔ לא כל כרטיס מושהה נבדק — רק אלה שהוחזרו מהגדרת המיזם כי השורש אינו פתיר ב-AI כיום.
    כרטיס שהוקפא בגלל דאטה או רגולציה אינו רלוונטי לסוכן הזה.
 ```
 
@@ -46,7 +46,7 @@ metadata:
 
 ## שרשור
 
-**לפניו:** [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) (טריגר 2 — הכרטיסים שתויגו "ממתין לטכנולוגיה X" הם בדיוק מרחב החיפוש של הסוכן הזה)
+**לפניו:** [`md-return-to-factory`](../md-return-to-factory/SKILL.md) (הכרטיסים שתויגו "ממתין לטכנולוגיה X" הם בדיוק מרחב החיפוש של הסוכן הזה)
 **אחריו:** [`pf-score-refresh`](../pf-score-refresh/SKILL.md)
 **מזין גם:** [`pf-funnel-review`](../pf-funnel-review/SKILL.md) (רשימת בעיות בשלות לבדיקה חוזרת ברבעון)
 **תיעוד:** [`pf-decision-logging`](../pf-decision-logging/SKILL.md)

@@ -1,9 +1,9 @@
 ---
 name: pf-approval-dossier
-description: "אורז תיק אישור אנושי שמציג ציון, הנמקה וסיכונים יחד — לוועדת תיעדוף, לבקשת ג'וקר, או לשער היציאה. Use whenever a human (Domain Lead, COO, or the prioritization committee) needs to approve a problem's advancement. Hebrew triggers: תיק אישור, ועדת תיעדוף, אישור מעבר, בקשת ג'וקר, להציג לאישור. Never presents a score without its risks, or risks without the score's reasoning."
+description: "אורז תיק אישור אנושי שמציג ציון, הנמקה וסיכונים יחד — לוועדת תיעדוף, לבקשת ג'וקר, או לשער היציאה — וכן הצעת פסילה ל-COO משערי הסף. Use whenever a human (Domain Lead, COO, or the prioritization committee) needs to approve a problem's advancement. Hebrew triggers: תיק אישור, ועדת תיעדוף, אישור מעבר, בקשת ג'וקר, להציג לאישור. Never presents a score without its risks, or risks without the score's reasoning."
 metadata:
   stage: 01-מפעל-הבעיות
-  sub_process: B,C,G
+  sub_process: A,B,C,G
   mode: לפני
   raci: R
   status: חדש
@@ -18,24 +18,29 @@ metadata:
 
 ## אופן פעולה וטריגר
 
-**לפני.** Event, בשלושה הקשרים:
+**לפני.** Event, בארבעה הקשרים:
 1. **ועדת תיעדוף** (B, ריצה 1) — מעבר לחקר מעמיק
 2. **בקשת ג'וקר** (C) — חריגה מהקריטריונים הרגילים
 3. **שער יציאה** (G, ריצה 2) — מעבר להגדרת המיזם
+4. **הצעת פסילה ל-COO** (A) — בעיה שנפסלה בשערי הסף
 
-## ⛔ כלל ברזל: שלושה רכיבים תמיד יחד
+## ⛔ כלל ברזל בתיקי ניקוד: שלושה רכיבים תמיד יחד
 
 | רכיב | מקור |
 |---|---|
-| **הציון** — הסופי **ולפי קטגוריה** | [`pf-problem-scoring`](../pf-problem-scoring/SKILL.md) |
-| **ההנמקה** — שורה לכל קטגוריה, לא רק המספר | [`pf-problem-scoring`](../pf-problem-scoring/SKILL.md) |
-| **הסיכונים** — משדה "סיכונים אפשריים" בכרטיס | כרטיס הבעיה |
+| **הציון** — הסופי **ולפי קטגוריה**, וכל 14 הציונים הגולמיים. ציון ריק מוצג כ"לא ניתן להעריך" (לא 0) | [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) · [`pf-problem-scoring`](../pf-problem-scoring/SKILL.md) |
+| **ההנמקה** — שורה לכל קריטריון, לא רק המספר; בציון שברירי — המגבלה | [`pf-problem-scoring`](../pf-problem-scoring/SKILL.md) |
+| **הסיכונים** — משדה "סיכונים אפשריים" בכרטיס, בארבעה תחומים: פרטיות · בטיחות · משפטי · הטמעה | כרטיס הבעיה |
 
 > **ציון גבוה ללא הצגת הסיכונים — או סיכונים ללא הקשר הציון וההנמקה — אינם מספיקים לאישור.** הסוכן מסרב להפיק תיק חלקי.
 
 ## תוספת בהקשר ג'וקר
 
 בבקשת ג'וקר יש להוסיף במפורש: הציון (**גם אם נמוך**) + ההנמקה **למה בכל זאת יש פוטנציאל מערכתי שטרם נוסח במדדים קיימים**.
+
+## מתכונת הצעת פסילה ל-COO
+
+בעיה שנפסלה בשערי הסף עדיין לא נוקדה, ולכן התיק כולל במקום ציון: **השער** שבו נפסלה · **עילת הפסילה** (`reject_basis`) · **הנימוק** · **התנאי לבחינה מחדש** (`return_condition`). אם שער אחר ממתין למידע, מציגים גם את שאלות ההשלמה. ראו [שערי-הסף](../../../01-מפעל-הבעיות/שערי-הסף.md#הכרעה-סופית-וניתוב).
 
 ## פלט
 
@@ -53,12 +58,13 @@ metadata:
 |---|---|
 | ועדת תיעדוף (קביעת ציון) | **A** = הנהלת המטה · R = COO + Domain Lead |
 | כניסת בעיה לרשימה | **A** = Domain Lead |
+| פסילה בשערי סף | **A** = COO, בהתייעצות Domain Lead |
 | ג'וקר | **A** = הנהלת המטה, בהתייעצות Domain Lead |
 | שער יציאה G | Domain Lead + **COO** |
 
 ## שרשור
 
-**לפניו:** [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) · [`pf-score-refresh`](../pf-score-refresh/SKILL.md) (ג'וקר) · [`pf-next-candidate`](../pf-next-candidate/SKILL.md) (שער G — לאחר שנבחרה המועמדת)
+**לפניו:** [`pf-threshold-gate`](../pf-threshold-gate/SKILL.md) (הצעת פסילה) · [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) · [`pf-score-refresh`](../pf-score-refresh/SKILL.md) (ג'וקר) · [`pf-next-candidate`](../pf-next-candidate/SKILL.md) (שער G — לאחר שנבחרה המועמדת)
 **אחריו (G):** [`pf-handoff-package`](../pf-handoff-package/SKILL.md)
 **נלווה:** [`pf-live-companion`](../pf-live-companion/SKILL.md) — כשאדם בוחן את התיק ורוצה לשאול שאלות בזמן אמת
 **תיעוד:** [`pf-decision-logging`](../pf-decision-logging/SKILL.md)

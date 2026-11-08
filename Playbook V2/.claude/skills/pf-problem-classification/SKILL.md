@@ -55,17 +55,12 @@ metadata:
 ## גבולות — מה הסוכן לעולם לא עושה
 
 - לא מכניס בעיה לרשימה הרשמית — רק פותח **טיוטה**
-- לא פוסל בעיה: החלטת פסילה על אי-עמידה בדרישות סף מובאת ל-**COO**, לא לסוכן ולא ל-Domain Lead לבד
 - לא מנקד (זה B)
-
-## דרישות הסף — לבדיקה בלבד, לא לפסילה
-
-שלוש דרישות סף חוסמות כניסה ([דרישות-סף](../../../01-מפעל-הבעיות/דרישות-סף-וקריטריוני-תיעדוף.md)): בעיה אמיתית (לא פתרון במסווה) · רלוונטיות ל-AI (AI-first לא AI-added) · פוטנציאל לאימפקט מדיד. הסוכן **מסמן** אי-עמידה ומעביר להכרעת COO — לא סוגר בעצמו.
 
 ## שרשור
 
 **לפניו:** [`pf-content-analysis`](../pf-content-analysis/SKILL.md)
-**אחריו (חדש):** [`pf-scoring-eligibility`](../pf-scoring-eligibility/SKILL.md) (תחילת B)
+**אחריו (חדש):** [`pf-threshold-gate`](../pf-threshold-gate/SKILL.md)
 **אחריו (עדכון):** [`pf-score-refresh`](../pf-score-refresh/SKILL.md) (C)
 **תיעוד:** [`pf-decision-logging`](../pf-decision-logging/SKILL.md)
 

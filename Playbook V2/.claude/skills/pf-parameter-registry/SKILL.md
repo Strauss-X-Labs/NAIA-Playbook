@@ -1,6 +1,6 @@
 ---
 name: pf-parameter-registry
-description: "מנהל את כל הפרמטרים הניתנים לעדכון בכור ההאצה — איתור הערך הנוכחי, אימות סמכות המשנה, ואכיפת תיעוד היסטוריית שינויים. Use whenever a parameter value is needed, questioned, or about to be changed: scoring weights, funnel targets, conversion ratios, risk mix, sampling frequencies, cost quotas, escalation thresholds. Hebrew triggers: פרמטר, ערך נוכחי, לשנות משקל, יעד שנתי, יחס המרה, תמהיל סיכון, מכסת עלות, תדירות דגימה, היסטוריית שינויים, מי מוסמך לשנות. Never changes a value on its own — prepares the change for the authorized human owner."
+description: "מנהל את כל הפרמטרים הניתנים לעדכון בכור ההאצה — איתור הערך הנוכחי, אימות סמכות המשנה, ואכיפת תיעוד היסטוריית שינויים. Use whenever a parameter value is needed, questioned, or about to be changed: scoring weights, funnel targets, conversion ratios, risk mix, sampling frequencies, cost quotas. Hebrew triggers: פרמטר, ערך נוכחי, לשנות משקל, יעד שנתי, יחס המרה, תמהיל סיכון, מכסת עלות, תדירות דגימה, היסטוריית שינויים, מי מוסמך לשנות. Never changes a value on its own — prepares the change for the authorized human owner."
 metadata:
   stage: חוצה-שלבים
   sub_process: H
@@ -62,7 +62,7 @@ metadata:
 
 | פרמטר | בעל הפרמטר | הקובץ שבו הוא חי | תדירות בחינה |
 |---|---|---|---|
-| משקלות קריטריוני התיעדוף (קטגוריה + תת-קריטריון) | הנהלת המטה | [דרישות-סף-וקריטריוני-תיעדוף](../../../01-מפעל-הבעיות/דרישות-סף-וקריטריוני-תיעדוף.md#פרמטר-משקלות-קריטריוני-התיעדוף) | גמישה, לפחות ב-Funnel Review |
+| משקלות קריטריוני התיעדוף (קטגוריה + 14 תתי-קריטריונים; ברירת מחדל לדיון 0.20/0.25) | הנהלת המטה | [דרישות-סף-וקריטריוני-תיעדוף](../../../01-מפעל-הבעיות/דרישות-סף-וקריטריוני-תיעדוף.md#פרמטר-משקלות-קריטריוני-התיעדוף) | גמישה, לפחות ב-Funnel Review |
 | יעד שנתי לבעיות שהופכות לפתרון | הנהלת המטה | [ניהול-משפך](../../../01-מפעל-הבעיות/ניהול-משפך-ותיעדוף-דינמי.md#פרמטר-1--יעד-שנתי-לבעיות-שהופכות-לפתרון-בפועל) | Funnel Review + שנתי |
 | יחסי המרה בין שלבי המשפך (לפי מורכבות) | הנהלת המטה | [ניהול-משפך](../../../01-מפעל-הבעיות/ניהול-משפך-ותיעדוף-דינמי.md#פרמטר-2--יחסי-המרה-בין-שלבי-המשפך) | Funnel Review |
 | תמהיל סיכון-תשואה (70%/30%) | הנהלת המטה | [תמהיל-סיכון-ותשואה](../../../01-מפעל-הבעיות/תמהיל-סיכון-ותשואה.md#פרמטר-תמהיל-סיכון-תשואה) | Funnel Review |
@@ -70,25 +70,22 @@ metadata:
 | מכסות עלות חודשיות לכל סוג עדכון | הנהלת המטה | [בקרת-עלות](../../../01-מפעל-הבעיות/בקרת-עלות-והרצות-סוכני-AI.md#בקרת-עלות-ותדירות-governance) | חודשי |
 | **תדירות דגימה — לכל מקור בנפרד** | Domain Lead | קובץ המקור עצמו: `כורי-בינה/<כור>/01-מפעל-הבעיות/מקורות/<מקור>.md` | לפי צורך |
 | חלון המענה ל-RFI | הנהלת המטה | [חקר-הבעיה](../../../02-הגדרת-המיזם/01-חקר-הבעיה.md) | לפי צורך |
-| ⏳ **סף טריגר "פער בין קטגוריות"** | הנהלת המטה | **טרם קיים כרטיס** — ראו חוב פתוח למטה | — |
 
 ## ⚠️ חוב פתוח — פרמטרים ללא כרטיס
 
 | פרמטר | מצב | הצעה |
 |---|---|---|
-| סף "פער גדול בין קטגוריות" (טריגר הסלמה 1) | אין סף מספרי כלל. הסוכן [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) **אינו יכול להכריע אוטומטית** | לפתוח כרטיס פרמטר ב[אלגוריתם-ניקוד](../../../01-מפעל-הבעיות/אלגוריתם-ניקוד-ותיעדוף.md#שלב-5-מתי-חוזרים-אחורה-להעמיק). הצעת פתיחה לדיון: **≥1.5 נקודות** |
-| משקלות התיעדוף | כרטיס קיים אך **הערך "טרם נקבע"** | דרושה החלטת הנהלה. עד אז — כל ציון הוא הצעה על בסיס ברירת מחדל לדיון (0.4/0.3/0.3), ויש לומר זאת במפורש בכל תיק אישור |
+| משקלות התיעדוף | כרטיס קיים אך **הערך "טרם נקבע"** | דרושה החלטת הנהלה. עד אז — כל ציון הוא הצעה על בסיס ברירת מחדל לדיון (קטגוריות 0.4/0.3/0.3; תתי-קריטריונים 0.20/0.25), ויש לומר זאת במפורש בכל תיק אישור |
 
 ## טבלת השפעה — מי קורא כל פרמטר
 
 | שינוי בפרמטר | משפיע על |
 |---|---|
-| משקלות התיעדוף | [`pf-problem-scoring`](../pf-problem-scoring/SKILL.md) · [`pf-score-refresh`](../pf-score-refresh/SKILL.md) · **כל הציונים הקיימים הופכים לא-השוואתיים** ⚠️ |
+| משקלות התיעדוף | [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) · [`pf-score-refresh`](../pf-score-refresh/SKILL.md) · **כל הציונים הקיימים הופכים לא-השוואתיים** ⚠️ |
 | יעד שנתי / יחסי המרה | [`pf-funnel-review`](../pf-funnel-review/SKILL.md) |
 | תמהיל סיכון | [`pf-funnel-review`](../pf-funnel-review/SKILL.md) · [`pf-next-candidate`](../pf-next-candidate/SKILL.md) |
 | תדירות דגימה | [`pf-source-scanning`](../pf-source-scanning/SKILL.md) (למקור הספציפי בלבד) |
 | מכסות עלות | כל הסוכנים — עצירה/אישור מראש |
-| סף טריגר | [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) |
 
 > ⚠️ **שינוי משקלות הוא הכבד ביותר:** הוא הופך ציונים היסטוריים ללא-השוואתיים. בכל שינוי כזה יש לציין במפורש אילו כרטיסים נוקדו לפי המשקלות הישנות ולשקול ניקוד מחדש דרך [`pf-score-refresh`](../pf-score-refresh/SKILL.md).
 
@@ -102,7 +99,7 @@ metadata:
 
 ## שרשור
 
-**משרת:** [`pf-problem-scoring`](../pf-problem-scoring/SKILL.md) · [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) · [`pf-funnel-review`](../pf-funnel-review/SKILL.md) · [`pf-source-scanning`](../pf-source-scanning/SKILL.md) · [`pf-next-candidate`](../pf-next-candidate/SKILL.md) — כולם קוראים פרמטרים דרכו
+**משרת:** [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) · [`pf-funnel-review`](../pf-funnel-review/SKILL.md) · [`pf-source-scanning`](../pf-source-scanning/SKILL.md) · [`pf-next-candidate`](../pf-next-candidate/SKILL.md) — כולם קוראים פרמטרים דרכו
 **לפניו:** [`pf-funnel-review`](../pf-funnel-review/SKILL.md) (הזירה העיקרית שבה מתקבלות החלטות שינוי)
 **אחריו:** [`pf-decision-logging`](../pf-decision-logging/SKILL.md) (תיעוד השינוי כהחלטה)
 

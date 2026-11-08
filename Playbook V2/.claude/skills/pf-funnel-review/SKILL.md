@@ -22,7 +22,7 @@ metadata:
 
 ## מה נאסף
 
-### 1. שישה מדדי בריאות משפך — כל אחד עם ערך נוכחי **+ ערך רבעון קודם (מגמה)**
+### 1. שבעה מדדי בריאות משפך — כל אחד עם ערך נוכחי **+ ערך רבעון קודם (מגמה)**
 
 | מדד |
 |---|
@@ -31,16 +31,18 @@ metadata:
 | ממתינות לתיעדוף |
 | עברו להגדרת מיזם |
 | מושהות / ממתינות לטכנולוגיה |
-| נפסלו — **ולמה** (ללמידה) |
+| ממתינות להשלמה (לפי שלב: שערי סף / שלב 0 / ניקוד חלקי) |
+| נפסלו — **ולמה** (ללמידה), לפי שער ולפי עילת פסילה |
 
 > תמונת-מצב בודדת לא מספיקה — בלי מגמה אי אפשר לדעת אם המשפך משתפר או מדרדר.
 
 ### 2. בעיות "ממתינה לטכנולוגיה X" בשלות לבדיקה חוזרת
-כאלה ש-[`pf-horizon-scanning`](../pf-horizon-scanning/SKILL.md) סימן כרלוונטיות מאז הסקירה הקודמת.
+כאלה ש-[`pf-horizon-scanning`](../pf-horizon-scanning/SKILL.md) סימן כרלוונטיות מאז הסקירה הקודמת. מקור התיוג הוא החזרה מהגדרת המיזם ([`md-return-to-factory`](../md-return-to-factory/SKILL.md)).
 
 ### 2ב. בעיות "ממתינה להעמקה" — **ואין להן מנגנון אחר שמעיר אותן**
 
-כרטיסים שנחסמו ב-[`pf-scoring-eligibility`](../pf-scoring-eligibility/SKILL.md). לכל אחד מוצג:
+כרטיסים שממתינים משערי הסף ([`pf-threshold-gate`](../pf-threshold-gate/SKILL.md)), משלב 0 ([`pf-scoring-eligibility`](../pf-scoring-eligibility/SKILL.md)) או מניקוד חלקי ([`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md)). לכל אחד מוצג:
+- **שלב** — מאיזה מהשלושה הגיע
 - **מה בדיוק חסר** (מהשדה שהתיוג מחייב)
 - **מאיפה זה עשוי להגיע** — אילו מקורות
 - **כמה זמן הוא ממתין** — כרטיס שממתין מעל רבעון אחד **מסומן בהבלטה** ומקבל תזכורת חוזרת
@@ -71,7 +73,7 @@ metadata:
 
 ## שרשור
 
-**לפניו:** [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) (טריגר 2 — "ממתין לטכנולוגיה X") · [`pf-scoring-eligibility`](../pf-scoring-eligibility/SKILL.md) ("ממתינה להעמקה" — **הסקירה הזו היא המנגנון היחיד שמעיר אותן**)
+**לפניו:** [`md-return-to-factory`](../md-return-to-factory/SKILL.md) ("ממתין לטכנולוגיה X") · [`pf-threshold-gate`](../pf-threshold-gate/SKILL.md), [`pf-scoring-eligibility`](../pf-scoring-eligibility/SKILL.md) ו-[`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) ("ממתינה להעמקה" — **הסקירה הזו היא המנגנון היחיד שמעיר אותן**)
 **מקבל נתונים מ:** [`pf-source-scanning`](../pf-source-scanning/SKILL.md), [`pf-problem-classification`](../pf-problem-classification/SKILL.md), [`pf-score-refresh`](../pf-score-refresh/SKILL.md), [`pf-horizon-scanning`](../pf-horizon-scanning/SKILL.md)
 **מפעיל בחזרה:** [`pf-source-scanning`](../pf-source-scanning/SKILL.md) (בחריגה) · [`pf-score-refresh`](../pf-score-refresh/SKILL.md) (בעיות שהתעוררו)
 **אחריו:** [`pf-next-candidate`](../pf-next-candidate/SKILL.md) (בתת-ביצוע מול היעד השנתי — "מי הבאה?")

@@ -30,16 +30,16 @@ metadata:
 
 ## תהליך
 
-1. קבל את הזוג `(כרטיס, מידע-חדש)`
+1. קבל את הזוג `(כרטיס, מידע-חדש)`. ⛔ כרטיס שמתויג "ממתינה להעמקה" (שלב: שערי סף) לא נכנס לשרשרת הניקוד — מעבירים אותו ל-[`pf-threshold-gate`](../pf-threshold-gate/SKILL.md), שמתחיל משער 0
 2. הרץ מחדש: [`pf-scoring-eligibility`](../pf-scoring-eligibility/SKILL.md) → [`pf-problem-scoring`](../pf-problem-scoring/SKILL.md) → [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md)
-3. השווה לציון הקודם
+3. השווה לציון הקודם. ציון קודם לפי גרסה 1.0 (12 קריטריונים) — **אין השוואה ישירה**: מנקדים מחדש ושומרים את הציון הישן עם גרסתו
 
 ## פלט
 
 | תוצאה | פעולה |
 |---|---|
 | ציון עלה מעל 4.0 | עדכון סטטוס במשפך; אם כבר היה בחקר מעמיק — יתכן שער-G חוזר |
-| טריגר 2 (בשלות AI) | תיוג "ממתינה לטכנולוגיה X" → ממתין ל-[`pf-funnel-review`](../pf-funnel-review/SKILL.md) / [`pf-horizon-scanning`](../pf-horizon-scanning/SKILL.md) |
+| ציון שהיה מלא והפך לחלקי (ציון ריק) | תיוג "ממתינה להעמקה" (שלב: ניקוד חלקי) → [`pf-funnel-review`](../pf-funnel-review/SKILL.md) |
 | ללא שינוי מהותי | ללא פעולה — רק תיעוד הריצה |
 
 ## גבולות — מה הסוכן לעולם לא עושה
@@ -57,6 +57,7 @@ metadata:
 ## שרשור
 
 **לפניו:** [`pf-problem-classification`](../pf-problem-classification/SKILL.md) · [`pf-horizon-scanning`](../pf-horizon-scanning/SKILL.md)
+**מעביר ל:** [`pf-threshold-gate`](../pf-threshold-gate/SKILL.md) (כרטיס שממתין בשערי הסף)
 **משתמש ב:** [`pf-scoring-eligibility`](../pf-scoring-eligibility/SKILL.md) → [`pf-problem-scoring`](../pf-problem-scoring/SKILL.md) → [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md)
 **תיעוד:** [`pf-decision-logging`](../pf-decision-logging/SKILL.md)
 

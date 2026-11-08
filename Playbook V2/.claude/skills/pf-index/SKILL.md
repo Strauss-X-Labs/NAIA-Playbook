@@ -21,7 +21,7 @@ metadata:
 ## הצינור המלא
 
 ```
-A. הזנה וסיווג      pf-source-scanning → pf-content-analysis → pf-problem-classification
+A. הזנה וסיווג      pf-source-scanning → pf-content-analysis → pf-problem-classification → pf-threshold-gate
 B. תיעדוף וניקוד    pf-scoring-eligibility → pf-problem-scoring → pf-escalation-triggers → pf-approval-dossier
 C. תיעדוף דינמי     pf-score-refresh (מריץ מחדש את B על כרטיס קיים)
 D. Funnel Review    pf-funnel-review (רבעוני)
@@ -49,9 +49,10 @@ G. שער יציאה        pf-approval-dossier (ריצה 2) → pf-handoff-pack
 | לסרוק מקור מידע חדש | [`pf-source-scanning`](../pf-source-scanning/SKILL.md) | לפני |
 | לנתח פריט גולמי שנאסף | [`pf-content-analysis`](../pf-content-analysis/SKILL.md) | לפני |
 | להחליט: בעיה חדשה או עדכון? | [`pf-problem-classification`](../pf-problem-classification/SKILL.md) | לפני |
+| לבדוק אם בעיה עומדת בשערי הסף | [`pf-threshold-gate`](../pf-threshold-gate/SKILL.md) | לפני |
 | לבדוק אם כרטיס בשל לניקוד | [`pf-scoring-eligibility`](../pf-scoring-eligibility/SKILL.md) | לפני |
-| לנקד בעיה (12 תתי-קריטריונים) | [`pf-problem-scoring`](../pf-problem-scoring/SKILL.md) | לפני |
-| לקבוע רצועה + לזהות הסלמה | [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) | לפני |
+| לנקד בעיה (14 תתי-קריטריונים) | [`pf-problem-scoring`](../pf-problem-scoring/SKILL.md) | לפני |
+| לחשב ציון משוקלל, לקבוע רצועה + לזהות הסלמה | [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) | לפני |
 | להכין תיק לאישור אנושי | [`pf-approval-dossier`](../pf-approval-dossier/SKILL.md) | לפני |
 | לעדכן ציון של בעיה קיימת | [`pf-score-refresh`](../pf-score-refresh/SKILL.md) | לפני |
 | להכין סקירה רבעונית | [`pf-funnel-review`](../pf-funnel-review/SKILL.md) | לפני |
@@ -63,9 +64,9 @@ G. שער יציאה        pf-approval-dossier (ריצה 2) → pf-handoff-pack
 | **לדעת/לשנות ערך פרמטר** | [`pf-parameter-registry`](../pf-parameter-registry/SKILL.md) | לפני + אחרי |
 | **"מי הבעיה הבאה?"** | [`pf-next-candidate`](../pf-next-candidate/SKILL.md) | לפני |
 
-## ⚠️ שני פרמטרים שערכם טרם נקבע
+## ⚠️ פרמטר שערכו טרם נקבע
 
-לפני שמסתמכים על ציון, יש לדעת: **משקלות התיעדוף** ו**סף טריגר "פער בין קטגוריות"** טרם אושרו ע"י הנהלת המטה. כל ציון מחושב לפי ברירת מחדל **לדיון בלבד**, ויש לומר זאת במפורש. פרטים: [`pf-parameter-registry`](../pf-parameter-registry/SKILL.md).
+לפני שמסתמכים על ציון, יש לדעת: **משקלות התיעדוף** טרם אושרו ע"י הנהלת המטה. כל ציון מחושב לפי ברירת מחדל **לדיון בלבד**, ויש לומר זאת במפורש. פרטים: [`pf-parameter-registry`](../pf-parameter-registry/SKILL.md).
 
 ## איפה הנתונים חיים
 

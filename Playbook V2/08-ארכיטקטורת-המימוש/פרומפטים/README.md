@@ -1,6 +1,6 @@
 # פרומפטים — גרסה ניידת של הסוכנים
 
-> 50 פרומפטים, אחד לכל סוכן מהותי — 16 `pf` · 20 `md` · 14 `dv`. **נגזרים מה-Skills — לא נערכים כאן.**
+> 51 פרומפטים, אחד לכל סוכן מהותי — 17 `pf` · 20 `md` · 14 `dv`. **נגזרים מה-Skills — לא נערכים כאן.**
 > נוצרו בעקבות משוב הצוות המיישם, 03.09.2026. **יוצאו מחדש 18.09.2026** — הגרסה הקודמת הייתה מיושנת מול הסקילים.
 
 ## ⛔ מקור אמת אחד
@@ -60,6 +60,7 @@ flowchart LR
 | סריקת מקורות | [pf-source-scanning](pf-source-scanning.md) |
 | ניתוח תוכן | [pf-content-analysis](pf-content-analysis.md) |
 | סיווג בעיה | [pf-problem-classification](pf-problem-classification.md) |
+| שערי סף | [pf-threshold-gate](pf-threshold-gate.md) |
 | מבחן ניקוד | [pf-scoring-eligibility](pf-scoring-eligibility.md) |
 | ניקוד | [pf-problem-scoring](pf-problem-scoring.md) |
 | טריגרי הסלמה | [pf-escalation-triggers](pf-escalation-triggers.md) |

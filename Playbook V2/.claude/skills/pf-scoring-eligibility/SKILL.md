@@ -18,7 +18,7 @@ metadata:
 
 ## אופן פעולה וטריגר
 
-**לפני.** Event — כשכרטיס טיוטה מוכן (ריצה 1), או לפני מעבר לשער G (ריצה 2).
+**לפני.** Event — כשכרטיס עבר את [`pf-threshold-gate`](../pf-threshold-gate/SKILL.md) (ריצה 1), או לפני מעבר לשער G (ריצה 2).
 
 ## ⛔ אילוץ FinOps מוחלט
 
@@ -34,7 +34,7 @@ metadata:
    → לא ברור: Five Whys / Problem Tree על הדאטה הקיים בלבד, לפני ניקוד
 
 3. האם יש לפחות מקור אחד מאומת (לא רק תקשורתי) מבין אלה שכבר נסרקו?
-   → לא: תיוג "דורש תיקוף", ניקוד זמני בלבד
+   → לא: תיוג "דורש תיקוף". קריטריון שנשען רק על מקור תקשורתי מקבל ציון ריק, לא ציון זמני
 ```
 
 ## פלט
@@ -48,6 +48,7 @@ metadata:
 
 | שדה | תוכן |
 |---|---|
+| **שלב** | מקור ההמתנה: שערי סף / שלב 0 / ניקוד חלקי. סטטוס אחד, עם שדה שלב — לא סטטוסים נפרדים |
 | **מה חסר** | בדיוק איזו בדיקה נכשלה ולמה (למשל: "אין נתון כמותי על שיעור אי-מימוש זכאות") |
 | **מאיפה זה עשוי להגיע** | אילו מקורות עשויים להכיל את החסר |
 | **תאריך התיוג** | לצורך מעקב ותזכורת חוזרת |
@@ -62,7 +63,7 @@ metadata:
 
 ## שרשור
 
-**לפניו:** [`pf-problem-classification`](../pf-problem-classification/SKILL.md) (ריצה 1) · [`pf-score-refresh`](../pf-score-refresh/SKILL.md) (ריצות חוזרות) · [`pf-next-candidate`](../pf-next-candidate/SKILL.md) (ריצה 2, לאחר שנבחרה המועמדת לשער G)
+**לפניו:** [`pf-threshold-gate`](../pf-threshold-gate/SKILL.md) (ריצה 1) · [`pf-score-refresh`](../pf-score-refresh/SKILL.md) (ריצות חוזרות) · [`pf-next-candidate`](../pf-next-candidate/SKILL.md) (ריצה 2, לאחר שנבחרה המועמדת לשער G)
 **אחריו (עובר):** [`pf-problem-scoring`](../pf-problem-scoring/SKILL.md)
 **אחריו (לא עובר):** [`pf-funnel-review`](../pf-funnel-review/SKILL.md) — מעקב רבעוני אחר "ממתינות להעמקה"
 **תיעוד:** [`pf-decision-logging`](../pf-decision-logging/SKILL.md)

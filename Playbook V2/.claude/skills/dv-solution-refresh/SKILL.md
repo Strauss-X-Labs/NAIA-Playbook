@@ -1,6 +1,6 @@
 ---
 name: dv-solution-refresh
-description: "מרענן את טבלת הפתרונות מה-RFI מול מצב השוק הנוכחי ומחזיר דלתא — מה עדיין תקף, מה השתנה, מה נעלם, ומה נוסף. Use at the start of solution selection (stage 3.1), after a lead partner is chosen, to re-validate what stage 02 collected before deciding. Hebrew triggers: רענון טבלת הפתרונות, מה השתנה מאז ה-RFI, בחירת הפתרון, תיקוף פתרונות, דלתא שוק. Produces a DELTA on an existing table — never ranks, never recommends, never contacts vendors."
+description: "מרענן את טבלת הפתרונות מה-RFI מול מצב השוק הנוכחי ומחזיר דלתא — מה עדיין תקף, מה השתנה, מה נעלם, ומה נוסף. Use at the start of solution selection (stage 3.1), after a professional partner is chosen, to re-validate what stage 02 collected before deciding. Hebrew triggers: רענון טבלת הפתרונות, מה השתנה מאז ה-RFI, בחירת הפתרון, תיקוף פתרונות, דלתא שוק. Produces a DELTA on an existing table — never ranks, never recommends, never contacts vendors."
 metadata:
   stage: 03-mvp-poc
   substage: "3.1"
@@ -18,7 +18,7 @@ metadata:
 
 ## טריגר
 
-**ידני.** בכניסה לתת-שלב 3.1, אחרי שנבחר שותף מוביל. הצעד הראשון בתת-השלב.
+**ידני.** בכניסה לתת-שלב 3.1, אחרי שנבחר שותף מקצועי. הצעד הראשון בתת-השלב.
 
 ## קלט
 
@@ -46,7 +46,7 @@ metadata:
 
 | התנאי | אם אינו מתקיים |
 |---|---|
-| ⭐ **נבחר שותף מוביל** — Gate של Roadshow מאושר בכרטיס | **עצור.** החזר: "3.1 מתחיל אחרי שנבחר שותף — ראו המתודולוגיה" |
+| ⭐ **נבחר שותף מקצועי** — Gate של Roadshow מאושר בכרטיס | **עצור.** החזר: "3.1 מתחיל אחרי שנבחר שותף — ראו המתודולוגיה" |
 | טבלת הפתרונות קיימת | **עצור.** החזר: "אין מה לרענן — לא נאספה טבלה ב-RFI" |
 | כלל העקביות — הכרטיס משקף את תוצרי שלב 02 | **עצור.** החזר: "הכרטיס אינו מעודכן — ראו מודל הנתונים" |
 

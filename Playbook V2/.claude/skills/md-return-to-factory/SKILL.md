@@ -1,6 +1,6 @@
 ---
 name: md-return-to-factory
-description: "מחזיר בעיה למפעל הבעיות כשלא נמצא שותף מוביל — עם כל הידע שנצבר בשלב הגדרת המיזם. Use when the Roadshow ends without a partner, to close the loop without losing months of work. Hebrew triggers: אין שותף, חזרה למפעל, מיזם שלא ממשיך, סגירת מיזם, מאגר בעיות בשלות. Packs links, never copies — and always tags the REASON, not just the fact of failure."
+description: "מחזיר בעיה למפעל הבעיות כשלא נמצא שותף מקצועי — עם כל הידע שנצבר בשלב הגדרת המיזם. Use when the Roadshow ends without a partner, to close the loop without losing months of work. Hebrew triggers: אין שותף, חזרה למפעל, מיזם שלא ממשיך, סגירת מיזם, מאגר בעיות בשלות. Packs links, never copies — and always tags the REASON, not just the fact of failure."
 metadata:
   stage: 02-הגדרת-המיזם
   mode: אחרי

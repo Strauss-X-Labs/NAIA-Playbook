@@ -1,6 +1,6 @@
 ---
 name: md-brief-drafting
-description: "מנסח את בריף המיזם — מסמך 1-2 עמודים בפורמט מכירתי, המיועד לגיוס שותף מוביל. Use to draft the outward-facing project brief after the Lean Canvas gate is approved. Hebrew triggers: בריף מיזם, מסמך מכירתי, לגיוס שותף, חומר ל-Roadshow, בריף לשותף. OUTWARD-FACING: requires an explicit human approval gate before it is sent to anyone outside the headquarters."
+description: "מנסח את בריף המיזם — מסמך 1-2 עמודים בפורמט מכירתי, המיועד לגיוס שותף מקצועי. Use to draft the outward-facing project brief after the Lean Canvas gate is approved. Hebrew triggers: בריף מיזם, מסמך מכירתי, לגיוס שותף, חומר ל-Roadshow, בריף לשותף. OUTWARD-FACING: requires an explicit human approval gate before it is sent to anyone outside the headquarters."
 metadata:
   stage: 02-הגדרת-המיזם
   mode: אחרי
@@ -98,7 +98,7 @@ metadata:
 
 ## שני הלקוחות — חייבים להופיע שניהם
 
-> **האזרח (אימפקט לאומי) והשותף המיישם (תמריץ עסקי).** בריף שמציג רק אימפקט לא יגייס שותף; בריף שמציג רק תמורה מחמיץ את הסיבה שהמטה קיים.
+> **האזרח (אימפקט לאומי) והשותף המקצועי (תמריץ עסקי).** בריף שמציג רק אימפקט לא יגייס שותף; בריף שמציג רק תמורה מחמיץ את הסיבה שהמטה קיים.
 
 ## כללי כתיבה
 

@@ -1,6 +1,6 @@
 ---
 name: pf-threshold-gate
-description: "מכריע אם כרטיס בעיה עומד בשערי הסף לכניסה לרשימה — שער 0 חוסם (בעיה אמיתית, לא פתרון במסווה), ואחריו התאמה מהותית ל-AI וקשר לאימפקט. Use when a new draft problem card needs an eligibility decision before scoring. Hebrew triggers: שערי סף, דרישות סף, פתרון במסווה, התאמה ל-AI, קשר לאימפקט, האם הבעיה נכנסת לרשימה. A gate, not a scorer — returns pass / reject / pending_information and never closes a rejection itself (Head of NAIA decides)."
+description: "מכריע אם כרטיס בעיה עומד בשערי הסף לכניסה לרשימה — שער 0 חוסם (בעיה אמיתית, לא פתרון במסווה), ואחריו התאמה מהותית ל-AI וקשר לאימפקט. Use when a new draft problem card needs an eligibility decision before scoring. Hebrew triggers: שערי סף, דרישות סף, פתרון במסווה, התאמה ל-AI, קשר לאימפקט, האם הבעיה נכנסת לרשימה. A gate, not a scorer — returns pass / reject / pending_information and never closes a rejection itself (Head of NIIA decides)."
 metadata:
   stage: 01-מפעל-הבעיות
   sub_process: A
@@ -73,12 +73,12 @@ metadata:
 | הכרעה | יעד |
 |---|---|
 | עובר | [`pf-scoring-eligibility`](../pf-scoring-eligibility/SKILL.md) |
-| נפסל | **הצעת פסילה להכרעת Head of NAIA** — הבעיה חוזרת למאגר עם תיוג סיבה, לא נמחקת |
-| ממתין | תיוג **"ממתינה להעמקה"** (שלב: שערי סף) + מסלול השלמה; מעקב ב-[`pf-funnel-review`](../pf-funnel-review/SKILL.md) |
+| נפסל | **הצעת פסילה להכרעת Head of NIIA** — הבעיה חוזרת למאגר עם תיוג סיבה, לא נמחקת |
+| ממתין | תיוג **"ממתינה להעמקה"** (שלב: שערי סף) + **התראה מיידית ל-Domain Lead** של האזור עם רשימת החסרים (`missing_information`) ו-`return_condition` + מסלול השלמה; מעקב ב-[`pf-funnel-review`](../pf-funnel-review/SKILL.md) |
 
 ## גבולות — מה הסוכן לעולם לא עושה
 
-- **לא סוגר פסילה** — מציע בלבד; ההחלטה מובאת ל-Head of NAIA
+- **לא סוגר פסילה** — מציע בלבד; ההחלטה מובאת ל-Head of NIIA
 - לא מנקד ולא מתעדף
 - לא משכתב את הבעיה ולא מוסיף עובדות שאין להן ביסוס
 - לא ממציא נפגעים, נזק, קשר סיבתי, תועלת AI או ביצועי חלופה כדי להכריע
@@ -94,8 +94,8 @@ metadata:
 
 **לפניו:** [`pf-problem-classification`](../pf-problem-classification/SKILL.md) (כרטיס חדש)
 **אחריו (עובר):** [`pf-scoring-eligibility`](../pf-scoring-eligibility/SKILL.md)
-**אחריו (נפסל):** Head of NAIA — ב-[`pf-approval-dossier`](../pf-approval-dossier/SKILL.md) במתכונת הצעת פסילה
-**אחריו (ממתין):** מסלול השלמה → חזרה לסוכן הזה משער 0 · [`pf-funnel-review`](../pf-funnel-review/SKILL.md)
+**אחריו (נפסל):** Head of NIIA — ב-[`pf-approval-dossier`](../pf-approval-dossier/SKILL.md) במתכונת הצעת פסילה
+**אחריו (ממתין):** התראה ל-Domain Lead · מסלול השלמה → חזרה לסוכן הזה משער 0 · [`pf-funnel-review`](../pf-funnel-review/SKILL.md)
 **תיעוד:** [`pf-decision-logging`](../pf-decision-logging/SKILL.md)
 
 ## רקע בוויקי

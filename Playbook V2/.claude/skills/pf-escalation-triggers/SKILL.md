@@ -1,6 +1,6 @@
 ---
 name: pf-escalation-triggers
-description: "מחשב ציון משוקלל מהציונים הגולמיים, קובע רצועת החלטה ומזהה טריגרי הסלמה שדורשים התייחסות אנושית. Use immediately after scoring, to compute the weighted score, determine the decision band and detect whether an escalation trigger fired. Hebrew triggers: ציון משוקלל, רצועת החלטה, טריגר הסלמה, ג'וקר, פער בין קטגוריות, ניקוד חלקי. Mechanical only — routes to the right human (Domain Lead vs Head of NAIA) and never resolves an escalation itself."
+description: "מחשב ציון משוקלל מהציונים הגולמיים, קובע רצועת החלטה ומזהה טריגרי הסלמה שדורשים התייחסות אנושית. Use immediately after scoring, to compute the weighted score, determine the decision band and detect whether an escalation trigger fired. Hebrew triggers: ציון משוקלל, רצועת החלטה, טריגר הסלמה, ג'וקר, פער בין קטגוריות, ניקוד חלקי. Mechanical only — routes to the right human (Domain Lead vs Head of NIIA) and never resolves an escalation itself."
 metadata:
   stage: 01-מפעל-הבעיות
   sub_process: B
@@ -36,7 +36,7 @@ metadata:
 
 כל המשקלות (קטגוריה ותת-קריטריון) הן **פרמטר בסמכות הנהלת המטה**. **קרא אותן דרך [`pf-parameter-registry`](../pf-parameter-registry/SKILL.md)** — אל תניח ערכים ואל תצטט מהזיכרון.
 
-> ⚠️ **מצב נוכחי:** ערך המשקלות רשום **"טרם נקבע"** ב[כרטיס הפרמטר](../../../01-מפעל-הבעיות/דרישות-סף-וקריטריוני-תיעדוף.md#פרמטר-משקלות-קריטריוני-התיעדוף). עד להחלטת הנהלה, כל ציון מחושב לפי **ברירת מחדל לדיון** (קטגוריות 0.4/0.3/0.3; תתי-קריטריונים 0.20 באימפקט ובאסטרטגי, 0.25 בישימות) — **וחובה לציין זאת במפורש בכל תיק אישור.** אל תציג ברירת מחדל כאילו הייתה החלטה.
+> ⚠️ **מצב נוכחי** ב[כרטיס הפרמטר](../../../01-מפעל-הבעיות/דרישות-סף-וקריטריוני-תיעדוף.md#פרמטר-משקלות-קריטריוני-התיעדוף): משקלות הקטגוריות **נקבעו** — 0.4/0.3/0.3. משקלות תתי-הקריטריונים **טרם נקבעו**, ועד להחלטת הנהלה מחושבים לפי **ברירת מחדל לדיון** (0.20 באימפקט ובאסטרטגי, 0.25 בישימות) — **וחובה לציין זאת במפורש בכל תיק אישור.** אל תציג ברירת מחדל כאילו הייתה החלטה.
 
 ב-`regulatory_complexity` ציון גבוה כבר מבטא מורכבות נמוכה — אין היפוך בחישוב. סיכונים אינם נכנסים לנוסחה.
 
@@ -55,7 +55,7 @@ metadata:
 | # | טריגר | דגל | למי מתריעים | מי מטפל ואיך |
 |---|---|---|---|---|
 | 1 | פער בין קטגוריות | `category-gap` | Domain Lead בלבד | העמקה ממוקדת **בקטגוריה החלשה בלבד** — לא בכל הבעיה מחדש |
-| 3 | **ג'וקר** | `joker` | Domain Lead **+ Head of NAIA** | הכרעה ניהולית מפורשת, לא Domain Lead לבד |
+| 3 | **ג'וקר** | `joker` | Domain Lead **+ Head of NIIA** | הכרעה ניהולית מפורשת, לא Domain Lead לבד |
 
 > טריגר 2 בוטל עם הסרת בשלות AI מהניקוד. המספור נשמר.
 
@@ -73,7 +73,7 @@ metadata:
 - לא מחשב ציון או רצועה כשיש ציון ריק
 - לא מחשב דגל מחדש
 - לא מוחק בעיה: <3.0 = חוזרת למאגר, לא נמחקת
-- לא מדלג על Head of NAIA בטריגר 3
+- לא מדלג על Head of NIIA בטריגר 3
 
 ## שרשור
 

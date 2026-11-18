@@ -1,6 +1,6 @@
 ---
 name: pf-approval-dossier
-description: "אורז תיק אישור אנושי שמציג ציון, הנמקה וסיכונים יחד — לוועדת תיעדוף, לבקשת ג'וקר, או לשער היציאה — וכן הצעת פסילה ל-COO משערי הסף. Use whenever a human (Domain Lead, COO, or the prioritization committee) needs to approve a problem's advancement. Hebrew triggers: תיק אישור, ועדת תיעדוף, אישור מעבר, בקשת ג'וקר, להציג לאישור. Never presents a score without its risks, or risks without the score's reasoning."
+description: "אורז תיק אישור אנושי שמציג ציון, הנמקה וסיכונים יחד — לוועדת תיעדוף, לבקשת ג'וקר, או לשער היציאה — וכן הצעת פסילה ל-Head of NAIA משערי הסף. Use whenever a human (Domain Lead, Head of NAIA, or the prioritization committee) needs to approve a problem's advancement. Hebrew triggers: תיק אישור, ועדת תיעדוף, אישור מעבר, בקשת ג'וקר, להציג לאישור. Never presents a score without its risks, or risks without the score's reasoning."
 metadata:
   stage: 01-מפעל-הבעיות
   sub_process: A,B,C,G
@@ -22,7 +22,7 @@ metadata:
 1. **ועדת תיעדוף** (B, ריצה 1) — מעבר לחקר מעמיק
 2. **בקשת ג'וקר** (C) — חריגה מהקריטריונים הרגילים
 3. **שער יציאה** (G, ריצה 2) — מעבר להגדרת המיזם
-4. **הצעת פסילה ל-COO** (A) — בעיה שנפסלה בשערי הסף
+4. **הצעת פסילה ל-Head of NAIA** (A) — בעיה שנפסלה בשערי הסף
 
 ## ⛔ כלל ברזל בתיקי ניקוד: שלושה רכיבים תמיד יחד
 
@@ -38,7 +38,7 @@ metadata:
 
 בבקשת ג'וקר יש להוסיף במפורש: הציון (**גם אם נמוך**) + ההנמקה **למה בכל זאת יש פוטנציאל מערכתי שטרם נוסח במדדים קיימים**.
 
-## מתכונת הצעת פסילה ל-COO
+## מתכונת הצעת פסילה ל-Head of NAIA
 
 בעיה שנפסלה בשערי הסף עדיין לא נוקדה, ולכן התיק כולל במקום ציון: **השער** שבו נפסלה · **עילת הפסילה** (`reject_basis`) · **הנימוק** · **התנאי לבחינה מחדש** (`return_condition`). אם שער אחר ממתין למידע, מציגים גם את שאלות ההשלמה. ראו [שערי-הסף](../../../01-מפעל-הבעיות/שערי-הסף.md#הכרעה-סופית-וניתוב).
 
@@ -56,11 +56,11 @@ metadata:
 
 | הקשר | מאשר |
 |---|---|
-| ועדת תיעדוף (קביעת ציון) | **A** = הנהלת המטה · R = COO + Domain Lead |
+| ועדת תיעדוף (קביעת ציון) | **A** = הנהלת המטה · R = Head of NAIA + Domain Lead |
 | כניסת בעיה לרשימה | **A** = Domain Lead |
-| פסילה בשערי סף | **A** = COO, בהתייעצות Domain Lead |
+| פסילה בשערי סף | **A** = Head of NAIA, בהתייעצות Domain Lead |
 | ג'וקר | **A** = הנהלת המטה, בהתייעצות Domain Lead |
-| שער יציאה G | Domain Lead + **COO** |
+| שער יציאה G | Domain Lead + **Head of NAIA** |
 
 ## שרשור
 

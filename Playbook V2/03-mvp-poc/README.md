@@ -12,12 +12,14 @@
 
 ## תתי-השלבים
 
-| תת-שלב | מטרה | תוצר |
-|---|---|---|
-| [בחירת הפתרון](01-בחירת-הפתרון.md) | סקירת פתרונות אפשריים, Startups וניתוח תקציב (Build/Buy/Partner), על בסיס ה-RFI מהגדרת המיזם | החלטת פתרון מתועדת ומנומקת |
-| [עיצוב המוצר (Architecture & Product Design)](02-עיצוב-המוצר-וארכיטקטורה.md) | הגדרת שאלת ההיתכנות העסקית (MVP), בניית קונספט מוצרי מבוסס MVP עם הסתכלות על התמונה הכוללת (PMF) | קונספט מוצרי, ארכיטקטורה מאפשרת, הגדרת הטכנולוגיות בשימוש |
-| [מפת הדרכים (Roadmap & GTM)](03-מפת-הדרכים-ו-gtm.md) | יצירת תוכנית עבודה רב-שלבית, מפורטת וישימה | מפת דרכים מלאה עם אבני דרך מוסכמות |
-| [הוכחת ערך (POV)](04-הוכחת-ערך-pov.md) | בחינת היתכנות מהירה של ליבת הפתרון בתכולה מינימלית | תשובה חיובית (או שלילית מוסברת) על שאלת ה-MVP |
+| תת-שלב | מטרה | תוצר | סוכנים |
+|---|---|---|---|
+| [בחירת הפתרון](01-בחירת-הפתרון.md) | סקירת פתרונות אפשריים, Startups וניתוח תקציב (Build/Buy/Partner), על בסיס ה-RFI מהגדרת המיזם | החלטת פתרון מתועדת ומנומקת | [`dv-solution-refresh`](../.claude/skills/dv-solution-refresh/SKILL.md) · [`dv-startup-scan`](../.claude/skills/dv-startup-scan/SKILL.md) · [`dv-budget-analysis`](../.claude/skills/dv-budget-analysis/SKILL.md) · [`dv-decision-drafting`](../.claude/skills/dv-decision-drafting/SKILL.md) |
+| [עיצוב המוצר (Architecture & Product Design)](02-עיצוב-המוצר-וארכיטקטורה.md) | הגדרת שאלת ההיתכנות העסקית (MVP), בניית קונספט מוצרי מבוסס MVP עם הסתכלות על התמונה הכוללת (PMF) | קונספט מוצרי, ארכיטקטורה מאפשרת, הגדרת הטכנולוגיות בשימוש | [`dv-canvas-update`](../.claude/skills/dv-canvas-update/SKILL.md) · [`dv-concept-drafting`](../.claude/skills/dv-concept-drafting/SKILL.md) · [`dv-mvp-question-drafting`](../.claude/skills/dv-mvp-question-drafting/SKILL.md) · [`dv-mvp-question-check`](../.claude/skills/dv-mvp-question-check/SKILL.md) · [`dv-architecture-drafting`](../.claude/skills/dv-architecture-drafting/SKILL.md) · [`dv-architecture-review`](../.claude/skills/dv-architecture-review/SKILL.md) |
+| [מפת הדרכים (Roadmap & GTM)](03-מפת-הדרכים-ו-gtm.md) | יצירת תוכנית עבודה רב-שלבית, מפורטת וישימה | מפת דרכים מלאה עם אבני דרך מוסכמות | [`dv-roadmap-drafting`](../.claude/skills/dv-roadmap-drafting/SKILL.md) · [`dv-roadmap-check`](../.claude/skills/dv-roadmap-check/SKILL.md) |
+| [הוכחת ערך (POV)](04-הוכחת-ערך-pov.md) | בחינת היתכנות מהירה של ליבת הפתרון בתכולה מינימלית | תשובה חיובית (או שלילית מוסברת) על שאלת ה-MVP | [`dv-experiment-design`](../.claude/skills/dv-experiment-design/SKILL.md) · [`dv-pov-dossier`](../.claude/skills/dv-pov-dossier/SKILL.md) |
+
+כל הסוכנים מנסחים, מרכזים או בודקים — אף אחד מהם אינו מכריע ואינו כותב קוד. איך הם משתלבים: [ארכיטקטורת המימוש של שלב 3](../08-ארכיטקטורת-המימוש/03-mvp-poc/README.md).
 
 לוח הזמנים והשערים המלאים: [gates-וזמנים.md](gates-וזמנים.md).
 
@@ -29,6 +31,6 @@
 
 ## מעבר לשלב הבא
 
-הוכחת ערך (POV) שעברה בהצלחה ואושרה — עוברת ל[יישום ופריסה: Production](../04-pmf-production-scale/README.md#תת-שלב-א--production-mvp), ומשם ל-PMF ול-Scale. אם התשובה על שאלת ה-MVP שלילית, חוזרים לזיקוק הבעיה מחדש (ב[הגדרת המיזם](../02-הגדרת-המיזם/README.md)) או להגדרת הפתרון מחדש (בתוך שלב זה).
+הוכחת ערך (POV) שעברה בהצלחה ואושרה — עוברת ל[יישום ופריסה: Production](../04-pmf-production-scale/01-production-mvp.md), ומשם ל-PMF ול-Scale. אם התשובה על שאלת ה-MVP שלילית, חוזרים לזיקוק הבעיה מחדש (ב[הגדרת המיזם](../02-הגדרת-המיזם/README.md)) או להגדרת הפתרון מחדש (בתוך שלב זה).
 
 > אם המיזם כולל טרנספורמציה של מערכת ליבה טכנולוגית ותיקה (לא רק בניית מוצר דיגיטלי חדש) — ראו גם את הנספח [שיטת פיתוח אג'נטי ו-ADR](../05-שיטת-פיתוח-אגנטי-וadr/README.md), שמפרט את המתודולוגיה הטכנית המתאימה למקרה הזה.

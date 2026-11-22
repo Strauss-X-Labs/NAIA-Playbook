@@ -1,6 +1,6 @@
 ---
 name: md-partner-mapping
-description: "ממפה ומדרג מועמדים לשותף מקצועי, ומנסח את התמריץ הספציפי לכל אחד. Use before the Roadshow, to build a ranked candidate list and tailor the 'what's in it for you' per candidate. Hebrew triggers: מיפוי שותפים, מועמדים לשותף, מה בשביל זה, Roadshow, בחירת שותף מקצועי, מי יכול לקחת בעלות. Prepares for the conversations — is never present in them."
+description: "ממפה ומדרג מועמדים לשותף מקצועי, ומנסח את התמריץ הספציפי לכל אחד. Use before the Roadshow, to build a ranked candidate list and tailor the 'what's in it for you' per candidate. Hebrew triggers: מיפוי שותפים, מועמדים לשותף, מה בשביל זה, Roadshow, בחירת שותף מקצועי, מי יכול לקחת אחריות. Prepares for the conversations — is never present in them."
 metadata:
   stage: 02-הגדרת-המיזם
   mode: לפני
@@ -78,7 +78,7 @@ metadata:
 
 ## ⭐ "מה בשביל זה?" — פר מועמד, לא פעם אחת
 
-> **חייב להיות לשותף תמריץ ברור לקחת בעלות.**
+> **חייב להיות לשותף תמריץ ברור לקבל אחריות על המיזם.**
 
 | סוג מועמד | התמריץ הטיפוסי |
 |---|---|

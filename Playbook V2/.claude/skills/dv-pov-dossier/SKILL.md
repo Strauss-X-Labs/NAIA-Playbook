@@ -3,7 +3,7 @@ name: dv-pov-dossier
 description: "אורז את תוצאות ניסוי ה-POV לתיק הכרעה — התוצאה שנמדדה מול הקריטריון שנקבע מראש וקפוא, מוכנות תשתיות הייצור, ומחויבות השותף — לאדם שהוגדר כמכריע. Use after the POV run ends, to structure the evidence for the gate decision. Hebrew triggers: תוצאות POV, תיק הכרעה, האם הושג הקריטריון, מעבר ל-Production, תשובה על שאלת ה-MVP, תשובה שלילית. Compares against the FROZEN criterion — never a revised one; never declares the verdict; if negative, orders evidence by which assumption failed, never recommends where to go back."
 metadata:
   stage: 03-mvp-poc
-  substage: "3.4"
+  substage: "3.5"
   mode: אחרי
   archetype: ריכוז
   raci: R
@@ -48,7 +48,7 @@ metadata:
 | מה | איפה |
 |---|---|
 | מבנה התוצר | [תבנית ניסוי POV](../../../06-כלים-ותבניות/ניסוי-pov-תבנית.md) — חלק ב׳ |
-| שלושת קריטריוני הגייט + שני מסלולי החזרה | [3.4 במתודולוגיה](../../../03-mvp-poc/04-הוכחת-ערך-pov.md) |
+| שלושת קריטריוני הגייט + שני מסלולי החזרה | [3.5 במתודולוגיה](../../../03-mvp-poc/05-הוכחת-ערך-pov.md) |
 
 ## תנאי כניסה
 
@@ -100,8 +100,8 @@ metadata:
 
 ## שרשור
 
-**לפניו:** ⬜ הצוות הריץ ← [`dv-experiment-design`](../dv-experiment-design/SKILL.md) · **אחריו:** ⬜ `decider` → Gate 3.4 → [Production](../../../04-pmf-production-scale/README.md) · או חזרה: [שלב 2](../../../02-הגדרת-המיזם/README.md) / [3.2](../../../03-mvp-poc/02-עיצוב-המוצר-וארכיטקטורה.md) · **תיעוד:** [`md-decision-logging`](../md-decision-logging/SKILL.md)
+**לפניו:** ⬜ הצוות הריץ ← [`dv-experiment-design`](../dv-experiment-design/SKILL.md) · **אחריו:** ⬜ `decider` → Gate 3.5 → [Production](../../../04-pmf-production-scale/README.md) · או חזרה: [שלב 2](../../../02-הגדרת-המיזם/README.md) / [3.2](../../../03-mvp-poc/02-עיצוב-המוצר-וארכיטקטורה.md) · **תיעוד:** [`md-decision-logging`](../md-decision-logging/SKILL.md)
 
 ## רקע בוויקי
 
-[עיצוב 3.4](../../../08-ארכיטקטורת-המימוש/03-mvp-poc/4-הוכחת-ערך.md) · [3.4 במתודולוגיה](../../../03-mvp-poc/04-הוכחת-ערך-pov.md) · [חוזה הסוכן](../../../08-ארכיטקטורת-המימוש/00-חוזה-הסוכן.md)
+[עיצוב 3.5](../../../08-ארכיטקטורת-המימוש/03-mvp-poc/5-הוכחת-ערך.md) · [3.5 במתודולוגיה](../../../03-mvp-poc/05-הוכחת-ערך-pov.md) · [חוזה הסוכן](../../../08-ארכיטקטורת-המימוש/00-חוזה-הסוכן.md)

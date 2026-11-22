@@ -67,9 +67,9 @@ metadata:
 - [ ] 6. עצור בשער אימוץ אנושי — אדם לוקח בעלות על הניסוח
 ```
 
-## עשרת סעיפי החובה
+## 11 סעיפי החובה
 
-בעיה · פתרון · הצעת ערך ייחודית · **AI Components** · מדדי הצלחה · קהל יעד · ערוצים · מבנה עלויות · **מודל עסקי/תמורה** · שותפים מרכזיים
+בעיה · פתרון · הצעת ערך ייחודית · **AI Components** · מדדי הצלחה · קהל יעד · ערוצים · **משאבים** · מבנה עלויות · **מודל עסקי/תמורה** · שותפים מרכזיים
 
 ## מקורות המילוי
 
@@ -78,6 +78,7 @@ metadata:
 | בעיה | מסמך הגדרת הבעיה ([`md-document-drafting`](../md-document-drafting/SKILL.md)) |
 | פתרון · AI Components | כרטיס הפתרון · [`md-ai-fit`](../md-ai-fit/SKILL.md) |
 | מדדי הצלחה | מדד ההצלחה מהגדרת הבעיה |
+| משאבים | דאטה והרשאות: [`md-data-validation`](../md-data-validation/SKILL.md) · Compute ולאמן מול לרכוש: [`md-ai-fit`](../md-ai-fit/SKILL.md) · התקשרויות: מסלול ההתקשרות שהוגדר · גישה לשטח ושותפים: מפת השחקנים מ-[`md-session-prep`](../md-session-prep/SKILL.md). משאב בלי מקור נשאר ריק ומסומן |
 | מבנה עלויות | [`md-budget-analysis`](../md-budget-analysis/SKILL.md) (אם כבר רץ) |
 | שותפים | מפת השחקנים מ-[`md-session-prep`](../md-session-prep/SKILL.md) |
 | סיכונים | [`md-data-validation`](../md-data-validation/SKILL.md) · [`md-ai-fit`](../md-ai-fit/SKILL.md) — כ**"מפתחות להצלחה"**, לא כפסילה |

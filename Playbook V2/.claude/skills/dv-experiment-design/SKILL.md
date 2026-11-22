@@ -1,9 +1,9 @@
 ---
 name: dv-experiment-design
-description: "מנסח את מבנה ניסוי ה-POV — סביבה, טכנולוגיה, תפעול, רגולציה, דאטה ומדידה — נגזר משאלת ה-MVP המאומצת, מה-Architecture Doc ומתוצרי בדיקת הדאטה. Use at the start of proof-of-value (stage 3.4), before the team builds anything, to draft the experiment plan a human adopts. Hebrew triggers: מבנה הניסוי, תכנון POV, סביבת הניסוי, הוכחת ערך, דרישות לניסוי, מה צריך כדי לבדוק. The success criterion is copied from the MVP question, frozen — the agent designs how to measure it, never what it is."
+description: "מנסח את מבנה ניסוי ה-POV — סביבה, טכנולוגיה, תפעול, רגולציה, דאטה ומדידה — נגזר משאלת ה-MVP המאומצת, מה-Architecture Doc ומתוצרי בדיקת הדאטה. Use at the start of MVP development (stage 3.4), before the team builds the MVP and the test environment, so the build targets the experiment of proof-of-value (stage 3.5), to draft the experiment plan a human adopts. Hebrew triggers: מבנה הניסוי, תכנון POV, סביבת הניסוי, הוכחת ערך, דרישות לניסוי, מה צריך כדי לבדוק. The success criterion is copied from the MVP question, frozen — the agent designs how to measure it, never what it is."
 metadata:
   stage: 03-mvp-poc
-  substage: "3.4"
+  substage: "3.5"
   mode: לפני
   archetype: ניסוח
   raci: R
@@ -44,7 +44,7 @@ metadata:
 | מה | איפה |
 |---|---|
 | **מבנה התוצר** | [תבנית ניסוי POV](../../../06-כלים-ותבניות/ניסוי-pov-תבנית.md) — חלק א׳ |
-| שש הדרישות | [3.4 במתודולוגיה](../../../03-mvp-poc/04-הוכחת-ערך-pov.md) |
+| שש הדרישות | [3.5 במתודולוגיה](../../../03-mvp-poc/05-הוכחת-ערך-pov.md) |
 
 ## תנאי כניסה
 
@@ -101,4 +101,4 @@ metadata:
 
 ## רקע בוויקי
 
-[עיצוב 3.4](../../../08-ארכיטקטורת-המימוש/03-mvp-poc/4-הוכחת-ערך.md) · [3.4 במתודולוגיה](../../../03-mvp-poc/04-הוכחת-ערך-pov.md) · [חוזה הסוכן](../../../08-ארכיטקטורת-המימוש/00-חוזה-הסוכן.md)
+[עיצוב 3.5](../../../08-ארכיטקטורת-המימוש/03-mvp-poc/5-הוכחת-ערך.md) · [3.5 במתודולוגיה](../../../03-mvp-poc/05-הוכחת-ערך-pov.md) · [חוזה הסוכן](../../../08-ארכיטקטורת-המימוש/00-חוזה-הסוכן.md)

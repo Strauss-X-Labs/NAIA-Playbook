@@ -1,6 +1,6 @@
 ---
 name: pf-problem-brief
-description: "מפיק תקציר בעיה — תמצית של עמוד אחד מכרטיס הבעיה, ב-HTML או PDF, להנגשת הבעיה לאנשים מחוץ למטה בלי כל הפרטים. Use whenever someone needs to explain a specific problem to an outside party, at any stage. Hebrew triggers: תקציר בעיה, תמצית בעיה, להסביר את הבעיה למישהו מבחוץ, דף בעיה, one-pager על בעיה. OUTWARD-FACING: the Domain Lead (problem factory) or Mission Lead (venture definition onward) approves content AND recipients before it is sent; scores, internal deliberations, names and restricted sources never go in."
+description: "מפיק תקציר בעיה — תמצית של עמוד אחד מכרטיס הבעיה, ב-HTML או PDF, להנגשת הבעיה לאנשים מחוץ למכון בלי כל הפרטים. Use whenever someone needs to explain a specific problem to an outside party, at any stage. Hebrew triggers: תקציר בעיה, תמצית בעיה, להסביר את הבעיה למישהו מבחוץ, דף בעיה, one-pager על בעיה. OUTWARD-FACING: the Domain Lead (problem factory) or Mission Lead (venture definition onward) approves content AND recipients before it is sent; scores, internal deliberations, names and restricted sources never go in."
 metadata:
   stage: חוצה-שלבים
   sub_process: On-Demand
@@ -9,14 +9,14 @@ metadata:
   audience: ⚠️ חיצוני
   raci: R
   status: חדש
-  version: 1.0.0
+  version: 1.0.1
 ---
 
 # מפיק תקציר בעיה
 
 ## אחריות יחידה
 
-לתמצת כרטיס בעיה לעמוד אחד **שאדם מחוץ למטה מבין** — ולהפיק אותו כ-HTML או PDF. *(הוגדר 26.11.2026.)*
+לתמצת כרטיס בעיה לעמוד אחד **שאדם מחוץ למכון מבין** — ולהפיק אותו כ-HTML או PDF. *(הוגדר 26.11.2026.)*
 
 ## ⚠️ פלט חיצוני — אישור לפני שליחה
 
@@ -29,7 +29,7 @@ metadata:
 
 ## טריגר
 
-**On-Demand, בכל שלב.** כל אחד בצוות המטה רשאי לבקש. אינו רץ אוטומטית.
+**On-Demand, בכל שלב.** כל אחד בצוות המכון רשאי לבקש. אינו רץ אוטומטית.
 
 ## קלט
 

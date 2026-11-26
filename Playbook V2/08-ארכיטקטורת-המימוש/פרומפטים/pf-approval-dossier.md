@@ -51,10 +51,10 @@
 
 | הקשר | מאשר |
 |---|---|
-| ועדת תיעדוף (קביעת ציון) | **A** = הנהלת המטה · R = Head of NIIA + Domain Lead |
+| ועדת תיעדוף (קביעת ציון) | **A** = Head of NIIA · R = Domain Lead |
 | כניסת בעיה לרשימה | **A** = Domain Lead |
 | פסילה בשערי סף | **A** = Head of NIIA, בהתייעצות Domain Lead |
-| ג'וקר | **A** = הנהלת המטה, בהתייעצות Domain Lead |
+| ג'וקר | **A** = Head of NIIA, בהתייעצות Domain Lead |
 | שער יציאה G | Domain Lead + **Head of NIIA** |
 
 ## כללי-על החלים תמיד

@@ -4,7 +4,7 @@ description: "מפת-על ונקודת כניסה לכל סוכני מפעל ה�
 metadata:
   stage: 01-מפעל-הבעיות
   role: index
-  version: 1.1.0
+  version: 1.2.0
 ---
 
 # מפעל הבעיות — מפת סוכנים ונקודת כניסה
@@ -56,7 +56,7 @@ G. שער יציאה        pf-approval-dossier (ריצה 2) + pf-gate-recommend
 | לחשב ציון משוקלל, לקבוע רצועה + לזהות הסלמה | [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) | לפני |
 | להכין תיק לאישור אנושי | [`pf-approval-dossier`](../pf-approval-dossier/SKILL.md) | לפני |
 | לנסח מסמך המלצה לשער שמובא ל-Head of NIIA | [`pf-gate-recommendation`](../pf-gate-recommendation/SKILL.md) | לפני |
-| להפיק תקציר בעיה לאנשים מחוץ למטה | [`pf-problem-brief`](../pf-problem-brief/SKILL.md) ⚠️ חיצוני | לפי בקשה |
+| להפיק תקציר בעיה לאנשים מחוץ למכון | [`pf-problem-brief`](../pf-problem-brief/SKILL.md) ⚠️ חיצוני | לפי בקשה |
 | לעדכן ציון של בעיה קיימת | [`pf-score-refresh`](../pf-score-refresh/SKILL.md) | לפני |
 | להכין סקירה רבעונית | [`pf-funnel-review`](../pf-funnel-review/SKILL.md) | לפני |
 | לבדוק אם טכנולוגיה חדשה פותחת בעיה קפואה | [`pf-horizon-scanning`](../pf-horizon-scanning/SKILL.md) | לפני |
@@ -69,7 +69,7 @@ G. שער יציאה        pf-approval-dossier (ריצה 2) + pf-gate-recommend
 
 ## ⚠️ פרמטר שערכו טרם נקבע
 
-לפני שמסתמכים על ציון, יש לדעת: משקלות הקטגוריות נקבעו (0.4/0.3/0.3), אך **משקלות תתי-הקריטריונים** טרם אושרו ע"י הנהלת המטה. כל ציון מחושב לפי ברירת מחדל **לדיון בלבד**, ויש לומר זאת במפורש. פרטים: [`pf-parameter-registry`](../pf-parameter-registry/SKILL.md).
+לפני שמסתמכים על ציון, יש לדעת: משקלות הקטגוריות נקבעו (0.4/0.3/0.3), אך **משקלות תתי-הקריטריונים** טרם אושרו ע"י Head of NIIA. כל ציון מחושב לפי ברירת מחדל **לדיון בלבד**, ויש לומר זאת במפורש. פרטים: [`pf-parameter-registry`](../pf-parameter-registry/SKILL.md).
 
 ## איפה הנתונים חיים
 

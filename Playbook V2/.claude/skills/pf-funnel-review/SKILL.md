@@ -1,13 +1,13 @@
 ---
 name: pf-funnel-review
-description: "מרכז את מדדי בריאות המשפך ומכין חבילת סקירה רבעונית אחידה להנהלת המטה. Use for the quarterly funnel health review, or when management asks for a portfolio-level status of the problem pipeline. Hebrew triggers: Funnel Review, סקירה רבעונית, בריאות המשפך, מדדי משפך, תמהיל סיכון. Prepares material only — never decides on parameters or portfolio mix."
+description: "מרכז את מדדי בריאות המשפך ומכין חבילת סקירה רבעונית אחידה ל-Head of NIIA. Use for the quarterly funnel health review, or when management asks for a portfolio-level status of the problem pipeline. Hebrew triggers: Funnel Review, סקירה רבעונית, בריאות המשפך, מדדי משפך, תמהיל סיכון. Prepares material only — never decides on parameters or portfolio mix."
 metadata:
   stage: 01-מפעל-הבעיות
   sub_process: D
   mode: לפני
   raci: R
   status: חדש
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # סוכן ריכוז-Funnel-Review
@@ -61,7 +61,7 @@ metadata:
 
 ## פלט
 
-חבילת סקירה אחידה → ישיבת הנהלה (אנושי בלבד). עדכוני פרמטרים שיוחלטו מתועדים **בטבלאות ההיסטוריה הקיימות**, לא בקובץ חדש.
+חבילת סקירה אחידה → סקירה עם Head of NIIA (אנושי בלבד). עדכוני פרמטרים שיוחלטו מתועדים **בטבלאות ההיסטוריה הקיימות**, לא בקובץ חדש.
 
 ## גבולות — מה הסוכן לעולם לא עושה
 

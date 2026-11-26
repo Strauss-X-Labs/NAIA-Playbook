@@ -4,7 +4,7 @@ description: "מפת-על ונקודת כניסה לכל סוכני מפעל ה�
 metadata:
   stage: 01-מפעל-הבעיות
   role: index
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # מפעל הבעיות — מפת סוכנים ונקודת כניסה
@@ -22,15 +22,16 @@ metadata:
 
 ```
 A. הזנה וסיווג      pf-source-scanning → pf-content-analysis → pf-problem-classification → pf-threshold-gate
+                    (פסילה → pf-approval-dossier + pf-gate-recommendation → Head of NIIA)
 B. תיעדוף וניקוד    pf-scoring-eligibility → pf-problem-scoring → pf-escalation-triggers → pf-approval-dossier
 C. תיעדוף דינמי     pf-score-refresh (מריץ מחדש את B על כרטיס קיים)
 D. Funnel Review    pf-funnel-review (רבעוני)
 E. קו-אופק          pf-horizon-scanning → מזין את C
 F. הרכבת צוות       pf-expert-suggestions
 I. מי הבאה?         pf-next-candidate (התפנה Mission Lead) → מקדים את שער G
-G. שער יציאה        pf-approval-dossier (ריצה 2) → pf-handoff-package
+G. שער יציאה        pf-approval-dossier (ריצה 2) + pf-gate-recommendation → Head of NIIA → pf-handoff-package
 
-חוצה-הכל:  pf-decision-logging (אחרי כל החלטה) · pf-live-companion (סיוע בזמן אמת)
+חוצה-הכל:  pf-decision-logging (אחרי כל החלטה) · pf-live-companion (סיוע בזמן אמת) · pf-problem-brief (תקציר בעיה לחוץ, לפי בקשה)
            pf-parameter-registry (H — כל ערך פרמטר נקרא ומשתנה דרכו)
 ```
 
@@ -54,6 +55,8 @@ G. שער יציאה        pf-approval-dossier (ריצה 2) → pf-handoff-pack
 | לנקד בעיה (14 תתי-קריטריונים) | [`pf-problem-scoring`](../pf-problem-scoring/SKILL.md) | לפני |
 | לחשב ציון משוקלל, לקבוע רצועה + לזהות הסלמה | [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) | לפני |
 | להכין תיק לאישור אנושי | [`pf-approval-dossier`](../pf-approval-dossier/SKILL.md) | לפני |
+| לנסח מסמך המלצה לשער שמובא ל-Head of NIIA | [`pf-gate-recommendation`](../pf-gate-recommendation/SKILL.md) | לפני |
+| להפיק תקציר בעיה לאנשים מחוץ למטה | [`pf-problem-brief`](../pf-problem-brief/SKILL.md) ⚠️ חיצוני | לפי בקשה |
 | לעדכן ציון של בעיה קיימת | [`pf-score-refresh`](../pf-score-refresh/SKILL.md) | לפני |
 | להכין סקירה רבעונית | [`pf-funnel-review`](../pf-funnel-review/SKILL.md) | לפני |
 | לבדוק אם טכנולוגיה חדשה פותחת בעיה קפואה | [`pf-horizon-scanning`](../pf-horizon-scanning/SKILL.md) | לפני |

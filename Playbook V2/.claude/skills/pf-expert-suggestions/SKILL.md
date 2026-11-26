@@ -1,6 +1,6 @@
 ---
 name: pf-expert-suggestions
-description: "מציע מועמדי Domain Expert מתוך רשימת המומחים הקיימת, לפי תיוג התחום של הבעיה. Use when a Domain Lead is assembling an ad-hoc research team for a problem entering deep research. Hebrew triggers: מומחי תוכן, Domain Expert, להרכיב צוות, מי המומחה בתחום, צוות אד-הוק. Suggests 2-3 ranked candidates as one input among several — the Domain Lead composes the team."
+description: "מציע מועמדי Domain Expert מתוך רשימת המומחים הקיימת, לפי תיוג התחום של הבעיה. Use when a Domain Lead is assembling an ad-hoc research team for a problem entering deep research. Hebrew triggers: מומחי תוכן, Domain Expert, להרכיב צוות, מי המומחה בתחום, צוות חקר. Suggests 2-3 ranked candidates as one input among several — the Domain Lead composes the team."
 metadata:
   stage: 01-מפעל-הבעיות
   sub_process: F

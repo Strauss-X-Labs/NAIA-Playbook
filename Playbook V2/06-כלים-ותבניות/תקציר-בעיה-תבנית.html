@@ -1,0 +1,90 @@
+<!doctype html>
+<!--
+  תבנית HTML לתקציר בעיה — מקור הסעיפים: תקציר-בעיה-תבנית.md
+  הסוכן pf-problem-brief מחליף כל {{...}} בתוכן. שדה ריק — מוחקים את כל הבלוק שלו, לא משאירים כותרת ריקה.
+  PDF: הדפסה מהדפדפן ל-PDF (A4). ה-CSS שלמטה מכין עמוד אחד.
+  ⚠️ עיצוב המכון (לוגו, גופנים, צבעים) טרם הוגדר — זהו עיצוב ניטרלי זמני.
+-->
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>תקציר בעיה · {{שם הבעיה}}</title>
+<style>
+  :root { --fg:#1c2430; --muted:#5b6573; --line:#d5dbe3; --accent:#1f3a5f; --soft:#f3f5f8; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Assistant","Segoe UI",Arial,sans-serif; color:var(--fg); background:#fff; font-size:15px; line-height:1.55; }
+  main { max-width:780px; margin:0 auto; padding:32px 28px; }
+  header { border-bottom:3px solid var(--accent); padding-bottom:10px; margin-bottom:18px; }
+  .kicker { color:var(--muted); font-size:13px; letter-spacing:.02em; }
+  h1 { margin:4px 0 0; font-size:26px; line-height:1.25; color:var(--accent); }
+  .lead { font-size:17px; margin:14px 0 18px; padding:12px 14px; background:var(--soft); border-inline-start:4px solid var(--accent); }
+  section { margin:0 0 12px; break-inside:avoid; }
+  h2 { font-size:15px; margin:0 0 3px; color:var(--accent); }
+  p, ul { margin:0; }
+  ul { padding-inline-start:20px; }
+  .src { color:var(--muted); font-size:12px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:12px 22px; }
+  footer { margin-top:18px; padding-top:8px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+  @page { size:A4; margin:14mm; }
+  @media print { main { padding:0; max-width:none; } body { font-size:13.5px; } h1 { font-size:22px; } .lead { font-size:15px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="kicker">NIIA · תקציר בעיה</div>
+    <h1>{{שם הבעיה}}</h1>
+  </header>
+
+  <p class="lead">{{1 · הבעיה במשפט אחד}}</p>
+
+  <div class="grid">
+    <section>
+      <h2>מי נפגע ובאיזה היקף</h2>
+      <p>{{2 · אוכלוסייה ונתון כמותי}} <span class="src">({{מקור, שנה}})</span></p>
+    </section>
+    <section>
+      <h2>למה זה חשוב</h2>
+      <p>{{3 · הנזק ומדד התוצאה}}</p>
+    </section>
+    <section>
+      <h2>מה ידוע על הסיבות</h2>
+      <p>{{4 · סיבות / השורש שנבחר}}</p>
+    </section>
+    <section>
+      <h2>איך AI עשוי לעזור</h2>
+      <p>{{5 · המנגנון — כאפשרות לבדיקה}}</p>
+    </section>
+  </div>
+
+  <section>
+    <h2>סיכונים</h2>
+    <ul>
+      <li>{{6 · תחום: שורה כללית}}</li>
+    </ul>
+  </section>
+
+  <div class="grid">
+    <section>
+      <h2>איפה זה עומד</h2>
+      <p>{{7 · השלב בתהליך}}</p>
+    </section>
+    <section>
+      <h2>מה אנחנו מחפשים</h2>
+      <p>{{8 · מה הנמען יכול לתרום}}</p>
+    </section>
+  </div>
+
+  <section>
+    <h2>איש קשר</h2>
+    <p>{{9 · תפקיד ודרך פנייה}}</p>
+  </section>
+
+  <footer>
+    <span>הופק {{תאריך}} · {{P-___}} גרסה {{גרסת הכרטיס}}</span>
+    <span>צילום מצב, נכון לתאריך ההפקה</span>
+  </footer>
+</main>
+</body>
+</html>

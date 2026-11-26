@@ -1,6 +1,6 @@
 ---
 name: pf-live-companion
-description: "מלווה אדם בזמן אמת תוך כדי עבודה — בראיון מומחה תוכן (SME) או בבחינת כרטיס בעיה לקראת הכרעה. Use during a live SME interview or while a Domain Lead reviews a problem card and wants answers on demand. Hebrew triggers: ליווי בזמן אמת, ראיון מומחה, SME, שאלות המשך, לעזור לי לבחון כרטיס, בזמן דיון. Responds only on request — never initiates, never writes a permanent artifact, never proposes a decision."
+description: "מלווה אדם בזמן אמת תוך כדי עבודה — בראיון מומחה תוכן או בבחינת כרטיס בעיה לקראת הכרעה. Use during a live domain-expert interview or while a Domain Lead reviews a problem card and wants answers on demand. Hebrew triggers: ליווי בזמן אמת, ראיון מומחה, מומחה תוכן, שאלות המשך, לעזור לי לבחון כרטיס, בזמן דיון. Responds only on request — never initiates, never writes a permanent artifact, never proposes a decision."
 metadata:
   stage: 01-מפעל-הבעיות
   sub_process: חוצה-A-G
@@ -22,7 +22,7 @@ metadata:
 
 ## שני הקשרים (modes)
 
-### הקשר 1 — ליווי ראיון SME
+### הקשר 1 — ליווי ראיון מומחה תוכן
 
 **קלט:** זרם השיחה החי + הקשר-הבעיה הקיים
 **פלט, רק לפי בקשה:**
@@ -61,7 +61,7 @@ metadata:
 
 ## שרשור
 
-**נלווה ל:** [`pf-approval-dossier`](../pf-approval-dossier/SKILL.md) (הקשר 2) · תהליך ראיון SME שמזין את [`pf-content-analysis`](../pf-content-analysis/SKILL.md) (הקשר 1)
+**נלווה ל:** [`pf-approval-dossier`](../pf-approval-dossier/SKILL.md) (הקשר 2) · תהליך ראיון מומחה תוכן שמזין את [`pf-content-analysis`](../pf-content-analysis/SKILL.md) (הקשר 1)
 **מעביר תוצרי-לוואי ל:** [`pf-content-analysis`](../pf-content-analysis/SKILL.md) (תמלול)
 **חובת מסירה בסיום כל סשן ל:** [`pf-decision-logging`](../pf-decision-logging/SKILL.md) (תמצית התרומות — ראו הסעיף לעיל)
 

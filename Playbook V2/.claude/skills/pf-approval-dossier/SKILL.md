@@ -7,7 +7,7 @@ metadata:
   mode: לפני
   raci: R
   status: חדש
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # סוכן הכנת-תיק-אישור
@@ -48,7 +48,7 @@ metadata:
 
 ## גבולות — מה הסוכן לעולם לא עושה
 
-- לא מאשר ולא ממליץ להחליט — רק אורז ומציג
+- לא מאשר ולא ממליץ להחליט — רק אורז ומציג. **ההמלצה לשער** (פסילה בשערי הסף, שער G) נכתבת בנפרד ב[`pf-gate-recommendation`](../pf-gate-recommendation/SKILL.md), ונחתמת ע"י הממליץ האנושי. התיק הזה הוא הנספח שלה
 - לא מפיק תיק חלקי (ראו כלל הברזל)
 - לא מסתיר סיכונים כדי לחזק מועמדות
 
@@ -65,7 +65,7 @@ metadata:
 ## שרשור
 
 **לפניו:** [`pf-threshold-gate`](../pf-threshold-gate/SKILL.md) (הצעת פסילה) · [`pf-escalation-triggers`](../pf-escalation-triggers/SKILL.md) · [`pf-score-refresh`](../pf-score-refresh/SKILL.md) (ג'וקר) · [`pf-next-candidate`](../pf-next-candidate/SKILL.md) (שער G — לאחר שנבחרה המועמדת)
-**אחריו (G):** [`pf-handoff-package`](../pf-handoff-package/SKILL.md)
+**אחריו:** [`pf-gate-recommendation`](../pf-gate-recommendation/SKILL.md) — בהצעת פסילה ובשער G, עמוד ההמלצה מונח על התיק · **(G):** [`pf-handoff-package`](../pf-handoff-package/SKILL.md)
 **נלווה:** [`pf-live-companion`](../pf-live-companion/SKILL.md) — כשאדם בוחן את התיק ורוצה לשאול שאלות בזמן אמת
 **תיעוד:** [`pf-decision-logging`](../pf-decision-logging/SKILL.md)
 

@@ -5,7 +5,7 @@ metadata:
   archetype: מצביע
   stage: 02-הגדרת-המיזם
   role: index
-  version: 2.0.0
+  version: 2.1.0
 ---
 
 # הגדרת המיזם — מפת סוכנים ונקודת כניסה
@@ -51,7 +51,7 @@ metadata:
 
 > ⛔ **בלי כרטיס מיזם פתוח, אף סוכן בשלב אינו רץ.** *(התגלה ב[סבב 3](../../../../כורי-בינה/כור-מעבדה/02-הגדרת-המיזם/דוח-סבב-3.md) — בסבב 2 השלב רץ ישירות על כרטיס הבעיה, ואיש לא שם לב)*
 
-## ⚠️ לצוות המיישם — לא לכולם יש "כפתור הרץ"
+## ⚠️ לצוות המימוש — לא לכולם יש "כפתור הרץ"
 
 | ארכיטיפ | סוכנים | יש מסך עם הרצה ותוצר? |
 |---|---|---|
@@ -74,7 +74,11 @@ metadata:
 | לבדוק סיבתיות ומנוף של שורש | [`md-evidence-validation`](../md-evidence-validation/SKILL.md) |
 | לבדוק מה נוסה בעולם | [`md-market-scan`](../md-market-scan/SKILL.md) |
 | לנסח מסמך פנימי | [`md-document-drafting`](../md-document-drafting/SKILL.md) |
+| לנסח חבילת קריאה מוקדמת למפגש תיקוף (חקר הבעיה, חלופה ב׳) | [`md-document-drafting`](../md-document-drafting/SKILL.md) |
+| לבחור חלופה לחקר הבעיה (זיקוק בחדר / תיקוף בחדר) | ⬜ **אין סוכן** — Head of NIIA מכריע לפי המלצת ה-Mission Lead ([בחירת החלופה](../../../02-הגדרת-המיזם/01-חקר-הבעיה.md#בחירת-החלופה)) |
 | לנסח בריף לשותפים | [`md-brief-drafting`](../md-brief-drafting/SKILL.md) ⚠️ חיצוני |
+| להפיק תקציר בעיה לאנשים מחוץ למטה | [`pf-problem-brief`](../pf-problem-brief/SKILL.md) ⚠️ חיצוני — Mission Lead מאשר |
+| מסמך המלצה לשער שמובא ל-Head of NIIA | [`pf-gate-recommendation`](../pf-gate-recommendation/SKILL.md) |
 | למלא Lean Canvas | [`md-canvas-prefill`](../md-canvas-prefill/SKILL.md) |
 | למזג קנבסים | [`md-canvas-merge`](../md-canvas-merge/SKILL.md) 🔶 |
 | RFI על **הבעיה** | [`md-rfi-problem`](../md-rfi-problem/SKILL.md) ⚠️ חיצוני |
